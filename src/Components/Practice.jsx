@@ -4,6 +4,9 @@ const Pracite=()=>{
 return(
     <>
     <p>{students.length===0 && "No Students Found"}</p>
+
+    {/* *********2nd Way************* */}
+    <p>{!students.length && "No Students Found"}</p>
     <p>No of Students:{students.length}</p>
     </>
 )
