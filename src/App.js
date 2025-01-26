@@ -1,6 +1,7 @@
 import './App.css';
 import Card from './Components/Card';
 import Conditional from './Components/Conditional';
+import Pracite from './Components/Practice';
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
    {/* **********************Card 1st Project************************************** */}
    {/* <Card/> */}
    {/* ***********************Conditional ************************************************* */}
-   <Conditional/>
+   {/* <Conditional/> */}
+   {/* ***************************Practice********************************** */}
+   <Pracite/>
     </>
   );
 }
