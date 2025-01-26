@@ -2,7 +2,7 @@ import './App.css';
 import Card from './Components/Card';
 import Conditional from './Components/Conditional';
 import Pracite from './Components/Practice';
-
+import NetflixSeries from "./Components/NetflixSeries.jsx"
 function App() {
   return (
     <>
@@ -11,7 +11,9 @@ function App() {
    {/* ***********************Conditional ************************************************* */}
    {/* <Conditional/> */}
    {/* ***************************Practice********************************** */}
-   <Pracite/>
+   {/* <Pracite/> */}
+   {/* *******************************Netflix Series********************* */}
+   <NetflixSeries/>
     </>
   );
 }
