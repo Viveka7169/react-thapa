@@ -1,10 +1,12 @@
-import Card from './Components/Card';
-import Conditional from './Components/Conditional';
-import Pracite from './Components/Practice';
-import NetflixSeries from "./Components/NetflixSeries.jsx"
-import EventHandling from './Components/EventHandling.jsx';
-import EventProps from './Components/EventProps.jsx';
-import EventPropogation from './Components/EventPropogation.jsx';
+// import Card from './Components/Card';
+// import Conditional from './Components/Conditional';
+// import Pracite from './Components/Practice';
+// import NetflixSeries from "./Components/NetflixSeries.jsx"
+// import EventHandling from './Components/EventHandling.jsx';
+// import EventProps from './Components/EventProps.jsx';
+// import EventPropogation from './Components/EventPropogation.jsx';
+import UseState from './Components/Hooks/UseState.jsx';
+import UseStatePractice from './Components/Hooks/UseStatePractice.jsx';
 function App() {
   return (
     <>
@@ -21,7 +23,11 @@ function App() {
    {/* *********************************Event Props************************* */}
    {/* <EventProps/> */}
     {/* *****************************Event Propogation****************** */}
-    <EventPropogation/>
+    {/* <EventPropogation/> */}
+    {/* ********************************Use State Hook********************* */}
+    {/* <UseState/> */}
+    {/* *****************Use State Practice************************ */}
+    <UseStatePractice/>
     
     
     </>
