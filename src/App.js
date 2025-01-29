@@ -1,4 +1,3 @@
-import './App.css';
 import Card from './Components/Card';
 import Conditional from './Components/Conditional';
 import Pracite from './Components/Practice';
