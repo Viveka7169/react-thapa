@@ -32,16 +32,20 @@ const NetflixCard = ({data}) => {
     return (
       <>
        <li>
-                          <img src={img_url} alt={name} width="40%" height="20%" />
-                          
-                          <p>Name:{name}</p>
+        <div className='p-6'>
+
+                          <img className=' w-full' src={img_url} alt={name} width="40%" height="20%" />
+        </div>
+          <div className=' flex flex-col gap-6 p-6 w-full'>
+                          <p className="text-xl font-semibold">Name:{name}</p>
                           <p>Rating:{rating}</p>
-                          <p>Summery:{description}</p>
+                          <p className="text-gray-600 mt-2">Summery:{description}</p>
                           <p>Genere:{genre}</p>
                           <p>Cast:{cast}</p>
                           <a href={watch_url}>
                               <button>Watch Now</button>
                           </a>
+            </div>                
                
   
                       </li>
