@@ -8,6 +8,7 @@
 import DerivedState from './Components/DerivedState.jsx';
 import UseState from './Components/Hooks/UseState.jsx';
 import UseStatePractice from './Components/Hooks/UseStatePractice.jsx';
+import LiftingStateUp from './Components/LiftingStateUp.jsx';
 function App() {
   return (
     <>
@@ -31,7 +32,11 @@ function App() {
     {/* <UseStatePractice/> */}
 
     {/* *********************Derived State******************** */}
-    <DerivedState/>
+    {/* <DerivedState/> */}
+
+
+    {/* ********************Lifting State Up******************** */}
+    <LiftingStateUp/>
     
     
     </>
