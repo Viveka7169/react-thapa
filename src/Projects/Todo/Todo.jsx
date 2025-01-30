@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MdDeleteForever,MdCheck } from "react-icons/md";
 
 const Todo = () => {
     const [inputValue,setInputValue]=useState("")
     const [task,setTask]=useState([])
+    const [dateTime,setDateTime]=useState("")
 
     const handleInputChange=(value)=>{
         setInputValue(value)
@@ -18,12 +19,29 @@ const Todo = () => {
         }
         setInputValue("")
     }
+
+    //Retrive Date and Time
+
+    useEffect(()=>{
+        const interval=setInterval(()=>{
+            const now = new Date()
+            const formatedDate=now.toLocaleDateString()
+            const formatedTime=now.toLocaleTimeString()
+            setDateTime(`${formatedDate} - ${formatedTime}`)
+        },1000)
+        return()=>clearInterval(interval)
+    },[])
+
   return (
     <>
     <section className="flex flex-col items-center min-h-screen pt-12 bg-gradient-to-r from-[#001214] to-[#001f29] text-white transition duration-300 overflow-hidden">
         <header className="flex flex-col items-center justify-around text-3xl min-h-[25vh] w-full">
             <h1 className="text-white text-5xl text-center">Todo List</h1>
+            <h2>{dateTime}</h2>
         </header>
+
+
+        {/* Form  */}
         <section>
             <form className="flex justify-center text-[1.7rem] my-4 p-3 w-full" onSubmit={handleSubmit}>
                 <div>
@@ -33,11 +51,12 @@ const Todo = () => {
              bg-[#f2f3f4] text-primary transition-colors duration-200 ease-in-out hover:cursor-text text-black"  />
                 </div>
                 <div>
-                    <button type='submit'>Add Task</button>
+                    <button type='submit' className=' bg-green-400 h-full rounded-r-lg p-2'>Add Task</button>
 
                 </div>
             </form>
         </section>
+
     {/* Array Display  */}
         <section className="flex justify-center items-center max-w-[1200px]">
         <ul className="min-w-[25%] list-none">
