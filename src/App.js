@@ -5,6 +5,7 @@
 // import EventHandling from './Components/EventHandling.jsx';
 // import EventProps from './Components/EventProps.jsx';
 // import EventPropogation from './Components/EventPropogation.jsx';
+import DerivedState from './Components/DerivedState.jsx';
 import UseState from './Components/Hooks/UseState.jsx';
 import UseStatePractice from './Components/Hooks/UseStatePractice.jsx';
 function App() {
@@ -27,7 +28,10 @@ function App() {
     {/* ********************************Use State Hook********************* */}
     {/* <UseState/> */}
     {/* *****************Use State Practice************************ */}
-    <UseStatePractice/>
+    {/* <UseStatePractice/> */}
+
+    {/* *********************Derived State******************** */}
+    <DerivedState/>
     
     
     </>
