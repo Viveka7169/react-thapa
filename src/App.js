@@ -9,7 +9,9 @@ import DerivedState from './Components/DerivedState.jsx';
 import UseState from './Components/Hooks/UseState.jsx';
 import UseStatePractice from './Components/Hooks/UseStatePractice.jsx';
 import LiftingStateUp from './Components/LiftingStateUp.jsx';
-import Todo from './Projects/Todo/Todo.jsx';
+import ShortCircuit from './Components/ShortCircuit.jsx';
+import { Todo } from './Projects/Todo/Todo.jsx';
+// import Todo from './Projects/Todo/Todo.jsx';
 import ToggleSwitch from './Projects/ToggleSwitch.jsx';
 function App() {
   return (
@@ -44,7 +46,9 @@ function App() {
       {/* <ToggleSwitch/> */}
 
       {/* **********************Todo Project******************** */}
-      <Todo/>
+      {/* <Todo/> */}
+      {/* *******************Short Circuit************************** */}
+      <ShortCircuit/>
     
     </>
   );
