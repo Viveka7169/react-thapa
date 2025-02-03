@@ -25,7 +25,7 @@ const UseStatePractice2 = () => {
     <label>
         Step:
         <input type="number"
-       
+       value={step}
         onChange={(e)=>setStep(Number(e.target.value))}
         />
     </label>
