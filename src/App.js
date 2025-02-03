@@ -8,6 +8,7 @@
 import DerivedState from './Components/DerivedState.jsx';
 import UseState from './Components/Hooks/UseState.jsx';
 import UseStatePractice from './Components/Hooks/UseStatePractice.jsx';
+import UseStatePractice2 from './Components/Hooks/UseStatePractice2.jsx';
 import LiftingStateUp from './Components/LiftingStateUp.jsx';
 import ShortCircuit from './Components/ShortCircuit.jsx';
 import { Todo } from './Projects/Todo/Todo.jsx';
@@ -48,7 +49,9 @@ function App() {
       {/* **********************Todo Project******************** */}
       {/* <Todo/> */}
       {/* *******************Short Circuit************************** */}
-      <ShortCircuit/>
+      {/* <ShortCircuit/> */}
+      {/* **********************Use State Practice********************* */}
+      <UseStatePractice2/>
     
     </>
   );
