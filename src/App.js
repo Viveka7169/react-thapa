@@ -8,6 +8,7 @@
 import ContactForm from './Components/ContactForm.jsx';
 import ControlledAndUncontrolled from './Components/ControlledAndUncontrolled.jsx';
 import DerivedState from './Components/DerivedState.jsx';
+import UseEffectPractice from './Components/Hooks/UseEffect/UseEffectPractice.jsx';
 import UseState from './Components/Hooks/UseState.jsx';
 import UseStatePractice from './Components/Hooks/UseStatePractice.jsx';
 import UseStatePractice2 from './Components/Hooks/UseStatePractice2.jsx';
@@ -65,7 +66,9 @@ function App() {
       {/* <LoginForm/> */}
 
       {/* *************************Contact Form********************** */}
-      <ContactForm/>
+      {/* <ContactForm/> */}
+      {/* *************************User Effect Practice****************** */}
+      <UseEffectPractice/>
 
     
     </>
