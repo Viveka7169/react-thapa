@@ -27,9 +27,9 @@ const UseEffectPractice = () => {
     },[name])
 
     //Changing Title
-    useEffect(()=>{
-        document.title=`Count:${count}`
-    },[count])
+    // useEffect(()=>{
+    //     document.title=`Count:${count}`
+    // },[count])
   return (
     <>
     <h1>Use Effect Challenge</h1>

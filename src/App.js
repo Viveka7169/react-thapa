@@ -16,6 +16,7 @@ import LiftingStateUp from './Components/LiftingStateUp.jsx';
 import LoginForm from "./Components/LoginForm.jsx"
 import RegistrationForm from './Components/RegistrationForm.jsx';
 import ShortCircuit from './Components/ShortCircuit.jsx';
+import Pokemon from './Projects/Pokemon.jsx';
 import { Todo } from './Projects/Todo/Todo.jsx';
 // import Todo from './Projects/Todo/Todo.jsx';
 import ToggleSwitch from './Projects/ToggleSwitch.jsx';
@@ -68,7 +69,9 @@ function App() {
       {/* *************************Contact Form********************** */}
       {/* <ContactForm/> */}
       {/* *************************User Effect Practice****************** */}
-      <UseEffectPractice/>
+      {/* <UseEffectPractice/> */}
+      {/* ******************Pokemon Game*************************** */}
+      <Pokemon/>
 
     
     </>
