@@ -11,6 +11,8 @@
 import { ThemeProvider } from './Components/Hooks/ContextAPI/ContextProvider.jsx';
 import DarkAndLightTheme from './Components/Hooks/ContextAPI/DarkAndLightTheme.jsx';
 import ReactMemo from './Components/Hooks/React_memo/ReatMemo.jsx';
+import MemoParentComponent from './Components/Hooks/UseMemo/UseMemo.jsx';
+import UseMemo from './Components/Hooks/UseMemo/UseMemo.jsx';
 // import UseEffectPractice from './Components/Hooks/UseEffect/UseEffectPractice.jsx';
 // import UseForwardRef from './Components/Hooks/UseRef/UseForwardRef.jsx';
 // import UseState from './Components/Hooks/UseState.jsx';
@@ -90,7 +92,10 @@ function App() {
       </ThemeProvider> */}
 
       {/* ****************************React.Memo*********************** */}
-      <ReactMemo/>
+      {/* <ReactMemo/> */}
+
+      {/* **************************Use Memo******************** */}
+          <MemoParentComponent/>
 
     
     </>
