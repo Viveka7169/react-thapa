@@ -10,6 +10,7 @@
 // import DerivedState from './Components/DerivedState.jsx';
 import { ThemeProvider } from './Components/Hooks/ContextAPI/ContextProvider.jsx';
 import DarkAndLightTheme from './Components/Hooks/ContextAPI/DarkAndLightTheme.jsx';
+import ReactMemo from './Components/Hooks/React_memo/ReatMemo.jsx';
 // import UseEffectPractice from './Components/Hooks/UseEffect/UseEffectPractice.jsx';
 // import UseForwardRef from './Components/Hooks/UseRef/UseForwardRef.jsx';
 // import UseState from './Components/Hooks/UseState.jsx';
@@ -84,9 +85,12 @@ function App() {
       {/* <UseForwardRef/> */}
 
       {/* ****************Dark and Light Theme Project with Context Api**** */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
           <DarkAndLightTheme/>
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      {/* ****************************React.Memo*********************** */}
+      <ReactMemo/>
 
     
     </>
