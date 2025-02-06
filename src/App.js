@@ -13,6 +13,11 @@ import DarkAndLightTheme from './Components/Hooks/ContextAPI/DarkAndLightTheme.j
 import ReactMemo from './Components/Hooks/React_memo/ReatMemo.jsx';
 import MemoParentComponent from './Components/Hooks/UseMemo/UseMemo.jsx';
 import UseMemo from './Components/Hooks/UseMemo/UseMemo.jsx';
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import Home from './Components/Router/Home.jsx';
+import About from './Components/Router/About.jsx';
+import Movie from './Components/Router/Movie.jsx';
+import AppLayout from './Components/Router/Layout/AppLayout.jsx';
 // import UseEffectPractice from './Components/Hooks/UseEffect/UseEffectPractice.jsx';
 // import UseForwardRef from './Components/Hooks/UseRef/UseForwardRef.jsx';
 // import UseState from './Components/Hooks/UseState.jsx';
@@ -28,6 +33,32 @@ import UseMemo from './Components/Hooks/UseMemo/UseMemo.jsx';
 // // import Todo from './Projects/Todo/Todo.jsx';
 // import ToggleSwitch from './Projects/ToggleSwitch.jsx';
 function App() {
+
+  //Router Practice
+  const router=createBrowserRouter([
+    {
+      path:"/",
+      element:<AppLayout/>,
+      children:[
+        {
+          path:"",
+          element:<Home/>
+        },
+        {
+          path:"about",
+          element:<About/>
+        },
+        {
+          path:"movie",
+          element:<Movie/>
+        }
+    
+      ]
+    },
+    
+  ])
+
+
   return (
     <>
    {/* **********************Card 1st Project************************************** */}
@@ -95,7 +126,8 @@ function App() {
       {/* <ReactMemo/> */}
 
       {/* **************************Use Memo******************** */}
-          <MemoParentComponent/>
+          {/* <MemoParentComponent/> */}
+          <RouterProvider router={router}/>
 
     
     </>
