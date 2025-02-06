@@ -5,20 +5,28 @@
 // import EventHandling from './Components/EventHandling.jsx';
 // import EventProps from './Components/EventProps.jsx';
 // import EventPropogation from './Components/EventPropogation.jsx';
-import ContactForm from './Components/ContactForm.jsx';
-import ControlledAndUncontrolled from './Components/ControlledAndUncontrolled.jsx';
-import DerivedState from './Components/DerivedState.jsx';
-import UseEffectPractice from './Components/Hooks/UseEffect/UseEffectPractice.jsx';
-import UseState from './Components/Hooks/UseState.jsx';
-import UseStatePractice from './Components/Hooks/UseStatePractice.jsx';
-import UseStatePractice2 from './Components/Hooks/UseStatePractice2.jsx';
-import LiftingStateUp from './Components/LiftingStateUp.jsx';
-import LoginForm from "./Components/LoginForm.jsx"
-import RegistrationForm from './Components/RegistrationForm.jsx';
-import ShortCircuit from './Components/ShortCircuit.jsx';
-import { Todo } from './Projects/Todo/Todo.jsx';
-// import Todo from './Projects/Todo/Todo.jsx';
-import ToggleSwitch from './Projects/ToggleSwitch.jsx';
+// import ContactForm from './Components/ContactForm.jsx';
+// import ControlledAndUncontrolled from './Components/ControlledAndUncontrolled.jsx';
+// import DerivedState from './Components/DerivedState.jsx';
+import { ThemeProvider } from './Components/Hooks/ContextAPI/ContextProvider.jsx';
+import DarkAndLightTheme from './Components/Hooks/ContextAPI/DarkAndLightTheme.jsx';
+import ReactMemo from './Components/Hooks/React_memo/ReatMemo.jsx';
+import MemoParentComponent from './Components/Hooks/UseMemo/UseMemo.jsx';
+import UseMemo from './Components/Hooks/UseMemo/UseMemo.jsx';
+// import UseEffectPractice from './Components/Hooks/UseEffect/UseEffectPractice.jsx';
+// import UseForwardRef from './Components/Hooks/UseRef/UseForwardRef.jsx';
+// import UseState from './Components/Hooks/UseState.jsx';
+// import UseStatePractice from './Components/Hooks/UseStatePractice.jsx';
+// import UseStatePractice2 from './Components/Hooks/UseStatePractice2.jsx';
+// import LiftingStateUp from './Components/LiftingStateUp.jsx';
+// import LoginForm from "./Components/LoginForm.jsx"
+// import RegistrationForm from './Components/RegistrationForm.jsx';
+// import ShortCircuit from './Components/ShortCircuit.jsx';
+// // import Pokemon from './Projects/Pokemon.jsx';
+// import {Pokemon} from "./Projects/Pokemon_Project/Pokemon.jsx"
+// import { Todo } from './Projects/Todo/Todo.jsx';
+// // import Todo from './Projects/Todo/Todo.jsx';
+// import ToggleSwitch from './Projects/ToggleSwitch.jsx';
 function App() {
   return (
     <>
@@ -68,7 +76,26 @@ function App() {
       {/* *************************Contact Form********************** */}
       {/* <ContactForm/> */}
       {/* *************************User Effect Practice****************** */}
-      <UseEffectPractice/>
+      {/* <UseEffectPractice/> */}
+      {/* ******************Pokemon Game*************************** */}
+      {/* <Pokemon/> */}
+
+      {/* *********************************Pokemon Crad Project*********** */}
+      {/* <Pokemon/> */}
+
+      {/* ***********************Forward Ref******************** */}
+      {/* <UseForwardRef/> */}
+
+      {/* ****************Dark and Light Theme Project with Context Api**** */}
+      {/* <ThemeProvider>
+          <DarkAndLightTheme/>
+      </ThemeProvider> */}
+
+      {/* ****************************React.Memo*********************** */}
+      {/* <ReactMemo/> */}
+
+      {/* **************************Use Memo******************** */}
+          <MemoParentComponent/>
 
     
     </>
