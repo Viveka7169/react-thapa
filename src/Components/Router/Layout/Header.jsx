@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 
 const Header = () => {
+  
   return (
     <>
     <header className=' bg-slate-500 flex w-screen'>
@@ -15,7 +16,7 @@ const Header = () => {
         <li>
 
           {/* Another Method to give color ti Navlink active Class  */}
-         <NavLink to="about"
+         <NavLink to="/about"
          style={({isActive})=> {return{
           color:isActive? "red" : "black"
          }}}
@@ -25,6 +26,11 @@ const Header = () => {
          <NavLink to="/movie"
          
          >Movie</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact">
+            Contact
+          </NavLink>
         </li>
       </ul>
     </header>

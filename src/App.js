@@ -8,16 +8,16 @@
 // import ContactForm from './Components/ContactForm.jsx';
 // import ControlledAndUncontrolled from './Components/ControlledAndUncontrolled.jsx';
 // import DerivedState from './Components/DerivedState.jsx';
-import { ThemeProvider } from './Components/Hooks/ContextAPI/ContextProvider.jsx';
-import DarkAndLightTheme from './Components/Hooks/ContextAPI/DarkAndLightTheme.jsx';
-import ReactMemo from './Components/Hooks/React_memo/ReatMemo.jsx';
-import MemoParentComponent from './Components/Hooks/UseMemo/UseMemo.jsx';
-import UseMemo from './Components/Hooks/UseMemo/UseMemo.jsx';
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Home from './Components/Router/Home.jsx';
-import About from './Components/Router/About.jsx';
-import Movie from './Components/Router/Movie.jsx';
-import AppLayout from './Components/Router/Layout/AppLayout.jsx';
+// import { ThemeProvider } from './Components/Hooks/ContextAPI/ContextProvider.jsx';
+// import DarkAndLightTheme from './Components/Hooks/ContextAPI/DarkAndLightTheme.jsx';
+// import ReactMemo from './Components/Hooks/React_memo/ReatMemo.jsx';
+// import MemoParentComponent from './Components/Hooks/UseMemo/UseMemo.jsx';
+// import UseMemo from './Components/Hooks/UseMemo/UseMemo.jsx';
+// import { createBrowserRouter, data, RouterProvider } from "react-router-dom"
+// import Home from './Components/Router/Home.jsx';
+// import About from './Components/Router/About.jsx';
+// import Movie from './Components/Router/Movie.jsx';
+// import AppLayout from './Components/Router/Layout/AppLayout.jsx';
 // import UseEffectPractice from './Components/Hooks/UseEffect/UseEffectPractice.jsx';
 // import UseForwardRef from './Components/Hooks/UseRef/UseForwardRef.jsx';
 // import UseState from './Components/Hooks/UseState.jsx';
@@ -32,32 +32,55 @@ import AppLayout from './Components/Router/Layout/AppLayout.jsx';
 // import { Todo } from './Projects/Todo/Todo.jsx';
 // // import Todo from './Projects/Todo/Todo.jsx';
 // import ToggleSwitch from './Projects/ToggleSwitch.jsx';
+// import {getMovieData} from "./api/getMovieData"
+// import Contact, { contactData } from './Components/Router/Contact.jsx';
+import Axios from './Components/Axios/Axios.jsx';
+
+//fetching data:-
+
+
+
 function App() {
-
+  // const getData=async()=>{
+  //   const response= await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=ea8d1079&s=titanic&page=1")
+  //   const data=await response.json()
+  //   return data
+  //   // console.log("Data from getData Function",data.Search);
+  // }
   //Router Practice
-  const router=createBrowserRouter([
-    {
-      path:"/",
-      element:<AppLayout/>,
-      children:[
-        {
-          path:"",
-          element:<Home/>
-        },
-        {
-          path:"about",
-          element:<About/>
-        },
-        {
-          path:"movie",
-          element:<Movie/>
-        }
+  // const router=createBrowserRouter([
+  //   {
+  //     path:"/",
+  //     element:<AppLayout/>,
+  //     children:[
+  //       {
+  //         path:"",
+  //         element:<Home/>
+  //       },
+  //       {
+  //         path:"about",
+  //         element:<About/>,
+  //         loader:getData
+  //       },
+  //       {
+  //         path:"movie",
+  //         element:<Movie/>
+  //       },
+  //       {
+  //         path:"contact",
+  //         element:<Contact/>,
+  //         action:contactData
+  //       }
     
-      ]
-    },
+  //     ]
+  //   },
     
-  ])
+  // ])
+  
 
+
+
+    
 
   return (
     <>
@@ -127,7 +150,8 @@ function App() {
 
       {/* **************************Use Memo******************** */}
           {/* <MemoParentComponent/> */}
-          <RouterProvider router={router}/>
+          {/* <RouterProvider router={router}/> */}
+          <Axios/>
 
     
     </>
